@@ -1,0 +1,37 @@
+.container {
+   height: 80vh;
+   width: 100vw;
+   background-color: black;
+   position: relative;
+}
+
+   @keyframes transformX{
+      from{
+         left:0%;
+      }
+      to{
+         left:100%;
+      }
+   }
+    @keyframes transformY{
+      from{
+         bottom:0%;
+      }
+      to{
+         bottom:100%;
+      }
+   }
+
+
+   .Box {
+      height: 70px;
+      width: 80px;
+      background-color: rgb(235, 244, 244);
+      border-radius: 90px;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      animation: transformY 1s ease-out infinite alternate,
+                 transformX 3s linear infinite pause;
+
+   }

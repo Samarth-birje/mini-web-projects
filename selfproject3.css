@@ -1,0 +1,95 @@
+/* Optional: base font size (browser default is usually 16px) */
+html {
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* NAMES SECTION */
+.names ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;              /* instead of margins on li */
+}
+
+.names ul li {
+    /* margin: 5px;  --> replaced by gap above */
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* LOGO */
+.logo img {
+    /* width: 90px; */
+    width: clamp(4rem, 8vw, 6rem);   /* scales with screen, min 4rem, max 6rem */
+}
+
+.logo {
+    display: flex;
+    margin: 0.625rem 1.25rem;        /* 10px 20px → rem */
+}
+
+/* NAME TEXT */
+.name {
+    margin-top: 1.5rem;              /* 25px → approx 1.5rem */
+    font-size: clamp(1.1rem, 2vw, 1.4rem);  /* 20px → responsive font */
+}
+
+.name p {
+    margin-top: 0;                   
+    font-size: clamp(0.9rem, 1.5vw, 1rem);  /* 15px → responsive font */
+}
+
+/* GRID SECTION */
+.down-part {
+    display: grid;
+   
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows:200px 230px 200px 240px;
+    gap: 1.5rem;  
+    justify-content: center;                   
+    justify-items: center;
+    align-items: stretch;
+    padding: 2rem 1rem;
+}
+
+/* BOXES */
+.box {
+    /* height: 20vh; width: 15vw;  → very rigid */
+    width: 100%;
+    max-width: 18rem;                /* responsive max width */
+    min-height: 12rem;               /* reasonable height */
+    border: 1px solid black;
+    border-radius: 0.625rem;         /* 10px → rem */
+    padding: 1.25rem;                /* 20px → rem */
+    box-sizing: border-box;
+      background-color: rgb(217, 212, 206);
+}
+
+.box1 {
+    text-align: center;
+    font-size: 40px;
+    padding:20px;
+    
+   
+}
+
+.download-box {
+    text-align: center;
+    border:2px solid black;
+    border-radius:10px;
+    color:black
+   
+}
+.box-1{
+    border:2px solid black;
+    margin:5px;
+    background-color:rgb(219, 193, 23)
+}
+
+       
